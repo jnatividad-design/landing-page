@@ -14,6 +14,15 @@ body{display: flex;
 .header-links {display: flex;
     flex-wrap: nowrap;
     justify-content: space-between;}
+.l1:hover { border-top: 4px solid #ffffff;
+    border-bottom: 4px solid #ffffff; transition: 0.2s;
+    }
+.l2:hover { border-top: 4px solid #ffffff;
+        border-bottom: 4px solid #ffffff; transition: 0.2s;
+        }
+.l3:hover { border-top: 4px solid #ffffff;
+            border-bottom: 4px solid #ffffff; transition: 0.2s;
+            }
  ul li{
         list-style-type: none;
         display: inline;
@@ -26,9 +35,10 @@ a {
 .left {max-width: 50%; flex: 1 1 0;}
 .hero {font-size: 48px; font-weight: bolder; color: #F9faf8; }
 .secondary-hero {font-size: 18px; color: #e5e7eb;}
-.hero-image{height: 300px; width:400px; background-color: gray; flex: 1 0 0; margin: 30px;
+.hero-image{height: 300px; width:400px; background-color: gray; flex: 1 0 0; margin: 30px; line-height: 300px;
     text-align: center;
 }
+
 h1 {font-size: 36px; font-weight: bolder; color: #1f2937;}
 .quote { font-size: 36px; font-style: italic; color: #1f2937; text-align: center;}
 .end-quote {align-self: flex-end; padding-right: 50px; margin: -20px 20px 20px 20px; font-weight: bolder;}
@@ -44,9 +54,12 @@ padding:30px}
 .one-box {display: flex;flex-direction: column; margin: 10px;}
 .box  {width: 150px; height: 150px; border: 5px solid lightskyblue; border-radius: 25px;}
 .caption {text-align: center;}
-button {border-radius: 5px; padding: 5px 10px; color: white; background-color: #3882f6; border: none;
+.button {border-radius: 5px; padding: 5px 10px; color: white; background-color: #3882f6; border: none; transition: 0.3s;
 }
-.booty {border: 1px solid white;}
+.button:hover {background-color: #01579b; color: white; transition: 0.3s;}
+#booty {border: 1px solid white; margin-top: 15px;}
 .footer {display: flex; justify-content: center; align-items: center; background-color: #1f2937; color: white;}
-
-.one-box{display:flex}
+.cta-left {justify-content: center; align-items: center; flex-direction: column;color: white;}
+.cta {font-weight: bolder;font-size: 18px;}
+.cta-small {font-weight: lighter; margin-top: -15px; font-size: 12px;}
+.one-box{display:flex;}
